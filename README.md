@@ -21,5 +21,26 @@ rosdep install --from-paths src --ignore-src --rosdistro=$ROS_DISTRO -y
 catkin_make
 ```
 # How to run
+1. Open 3 terminal windows in your catkin workspace:
+```
+cd ~/*INSERT_WORKSPACE_NAME*
+```
+2. Source the workspace in each window:
+```
+source devel/setup.bash
+```
+3. Launch the simulation, SLAM, Catographer node, and Rviz:
+```
+roslaunch husky_gazebo husky_playpen.launch
 
+roslaunch husky_cartographer_navigation cartographer_demo.launch
+
+roslaunch husky_viz view_robot.launch
+```
+
+# Setting up data collection
+## TODO by Andy
+
+# Exporting data into readable formats
+## TODO by Mitchell
   
