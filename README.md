@@ -6,19 +6,27 @@
   Collect farm and plant data using a Clearpath Robotics Husky base from various farms in and around West Virginia.
   
 # Installation
-1. Start by cloning these repositories into your workspace src folder (ex. ~/catkin-ws/src):
+1. Start by cloning this into your workspace src folder (ex. ~/catkin-ws/src):
 ```
-git clone https://github.com/husky/husky_cartographer_navigation
+git clone https://github.com/nickcharron/waypoint_nav
 ```
-2. Navigate back to your workspace directory and install the dependencies (ex. ~/catkin-ws):
+2. Install GeographicLib:
+```
+sudo apt update
+sudo apt install geographiclib-tools
+```
+3. Navigate back to your workspace directory (ex. ~/catkin-ws) and install robot localization then install all of the dependencies :
 ```
 cd ..
-rosdep install --from-paths src --ignore-src --rosdistro=$ROS_DISTRO -y
+rosdep install robot_localization
+rosdep install --from-paths src --ignore-src -r -y
 ```
-3. Build the workspace:
+4. Build the workspace:
 ```
 catkin_make
 ```
+If it fails because of *GeographicLib/MGRS.hpp: no such file or directory* then try this:
+
 # How to run
 1. Open 3 terminal windows in your catkin workspace:
 ```
