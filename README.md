@@ -8,7 +8,6 @@
 # Installation
 1. Start by cloning these repositories into your workspace src folder (ex. ~/catkin-ws/src):
 ```
-git clone https://github.com/husky/husky
 git clone https://github.com/husky/husky_cartographer_navigation
 ```
 2. Navigate back to your workspace directory and install the dependencies (ex. ~/catkin-ws):
