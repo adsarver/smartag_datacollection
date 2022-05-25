@@ -47,7 +47,7 @@ roslaunch husky_viz view_robot.launch
 
 # Setting up data collection
 ## TODO by Andy
-
+1. rosbag record -a
 # Exporting data into readable formats
 ## TODO by Mitchell
   
