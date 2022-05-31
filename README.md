@@ -17,7 +17,7 @@
   ./launch_nobag.sh
   ```
 2. In Rviz, click *Add*, go to the *By topic* tab, add *map*
-3. Repeat for adding Point_Cloud2
+3. Repeat step 2 for adding Point_Cloud2
 4. Start data collection:
   ```
   ./launch_bag.sh
