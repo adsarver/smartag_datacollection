@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot name="combined" xmlns:xacro="http://wiki.ros.org/xacro">
+  <!-- include macros for husky and kinova -->
+  <xacro:include filename="$(find bramblebee_description)/urdf/bramblebee_description.urdf.xacro"/>
+  <xacro:include filename="$(find kinova_description)/urdf/j2n6s300.xacro" />
+<!--   <xacro:macro name="husky_with_kinova">
+    <xacro:husky prefix="" />
+  </xacro:macro> -->
+  <husky />
+  <!-- initialize kinova with connection to top of husky-->
+  <link name="root">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size = "0.00001 0.00001 0.00001"/>
+      </geometry>
+    <!--<material name="Black" /> -->
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size = "0.00001 0.00001 0.00001"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- 13.2 inches to the top center of the side plate -->
+  <joint name="root_between_husky_and_kinova" type="fixed">
+    <child link="root" />
+    <parent link="top_plate_link" />
+    <origin xyz="0.2 0 0" rpy="0 0 1.57" />
+  </joint>
+  
+  <xacro:property name="robot_root" value="root" />
+  <xacro:j2n6s300 base_parent="${robot_root}" prefix="j2n6s300" />
+</robot>

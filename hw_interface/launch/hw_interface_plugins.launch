@@ -1,0 +1,5 @@
+<!-- this launch file simply loads the each plugins' launch file -->
+
+<launch>
+    <include file="$(find hw_interface_plugin_novatel_span)/launch/Novatel_Span_Serial_Interface.launch" />
+</launch>

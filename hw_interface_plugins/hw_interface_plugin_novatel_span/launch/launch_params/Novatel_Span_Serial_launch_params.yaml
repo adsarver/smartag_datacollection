@@ -1,0 +1,21 @@
+plugin_names: 
+    {
+        novatel_span_serial : hw_interface_plugin_novatel_span,
+    }
+    
+novatel_span_serial:
+    {
+        novatel_span : "novatel_span",
+    }
+    
+novatel_span:
+    {
+        deviceName         : "/dev/serial/by-path/pci-0000:00:14.0-usb-0:2:1.0-port1",
+        baudrate           : 115200,
+        subscribeToTopic   : "/example/subscribe",
+        publishToTopic     : "/imu/data",
+        recordGPSData      : true,
+        gpsDataFileName    : "/home/bramblebee/Desktop/data/gps_data_parking_lot.bin"
+    }
+
+
