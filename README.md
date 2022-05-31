@@ -1,8 +1,6 @@
 # smartag_datacollection
-
-**WIP**
-
-## Description and goals
+  **WIP**
+  
   Collect farm and plant data using a Clearpath Robotics Husky base from various farms in and around West Virginia.
   
 ## Installation
