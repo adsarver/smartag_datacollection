@@ -4,9 +4,12 @@
   Collect farm and plant data using a Clearpath Robotics Husky base from various farms in and around West Virginia.
   
 ## Installation
-  1. Clone the workspace into your src folder and run catkin_make:
+  1. Clone the following workspaces into your src folder and run catkin_make:
   ```
+  cd ~/${YOUR_CATKIN_WS}/src
   git clone https://github.com/adsarver/smartag_datacollection
+  git clone https://github.com/typicode/husky
+  git clone https://github.com/ros-drivers/velodyne
   catkin_make
   ```
 
