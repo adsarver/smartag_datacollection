@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
 <robot name="combined" xmlns:xacro="http://wiki.ros.org/xacro">
   <!-- include macros for husky and kinova -->
-  <xacro:include filename="$(find bramblebee_description)/urdf/bramblebee_description.urdf.xacro"/>
-  <xacro:include filename="$(find kinova_description)/urdf/j2n6s300.xacro" />
+  <xacro:include filename="$(find hardwarelaunch)/urdf/bramblebee_description.urdf.xacro"/>
 <!--   <xacro:macro name="husky_with_kinova">
     <xacro:husky prefix="" />
   </xacro:macro> -->
@@ -32,5 +31,4 @@
   </joint>
   
   <xacro:property name="robot_root" value="root" />
-  <xacro:j2n6s300 base_parent="${robot_root}" prefix="j2n6s300" />
 </robot>

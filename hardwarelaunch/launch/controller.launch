@@ -5,7 +5,7 @@
 
     <!-- Robot Description -->
     <param name="robot_description"
-        command="$(find xacro)/xacro '$(find husky_description)/urdf/husky.urdf.xacro'" /> 
+        command="$(find xacro)/xacro '$(find hardwarelaunch)/urdf/combined.urdf.xacro'" /> 
 
 
     <!-- Husky harware driver -->
@@ -36,4 +36,7 @@
     <node pkg="diagnostic_aggregator" type="aggregator_node" name="diagnostic_aggregator">
         <rosparam command="load" file="$(find husky_base)/config/diagnostics.yaml"/>
     </node>
+    
+    <!-- Model -->
+    <include file="$(find hardwarelaunch)/launch/description.launch" /> 
 </launch>
