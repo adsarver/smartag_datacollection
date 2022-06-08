@@ -30,8 +30,7 @@
   cd ~/${YOUR_CATKIN_WS}/src
   ./launch_nobag.sh
   ```
-2. In Rviz, click *Add*, go to the *By topic* tab, add *map*
-3. Repeat step 2 for adding Point_Cloud2
+2. In Rviz, click *Add*, go to the *By topic* tab, add *map*, repeat for anything else you would like to visualize
 4. Start data collection:
   ```
   ./launch_bag.sh
