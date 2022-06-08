@@ -3,8 +3,15 @@
   
   Collect farm and plant data using a Clearpath Robotics Husky base from various farms in and around West Virginia.
   
+## Required Hardware
+
+ ZED 2i
+ Velodyne VLP-16
+ Clearpath Robotics Husky
+
 ## Installation
-  1. Clone the following workspaces into your src folder and run catkin_make:
+  1. Make sure that the required hardware is setup properly
+  2. Clone the following workspaces into your src folder and run catkin_make:
   ```
   cd ~/${YOUR_CATKIN_WS}/src
   git clone https://github.com/adsarver/smartag_datacollection
