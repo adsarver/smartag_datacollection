@@ -6,7 +6,9 @@
 ## Required Hardware
 
  ZED 2i
+ 
  Velodyne VLP-16
+ 
  Clearpath Robotics Husky
 
 ## Installation
