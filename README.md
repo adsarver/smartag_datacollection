@@ -19,7 +19,7 @@
   ```
   cd ~/${YOUR_CATKIN_WS}/src
   git clone https://github.com/adsarver/smartag_datacollection
-  git clone https://github.com/typicode/husky
+  git clone https://github.com/husky/husky
   git clone https://github.com/IntelRealSense/realsense-ros
   git clone https://github.com/ros-perception/slam_gmapping
   git clone https://github.com/ros-drivers/velodyne
