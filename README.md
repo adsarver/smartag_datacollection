@@ -27,15 +27,16 @@
   git clone https://github.com/stereolabs/zed-ros-interfaces
   catkin_make
   ```
-
+  3. Configure the Zed depth quality and link to the base (zed_link) in these files: zed_camera.launch.xml, common.yaml
 ## How to run
   1. Navigate to the workspace src folder and run the launch_nobag.sh:
   ```
   cd ~/${YOUR_CATKIN_WS}/src
   ./launch_nobag.sh
   ```
-2. In Rviz, click *Add*, go to the *By topic* tab, add *map*, repeat for anything else you would like to visualize
-4. Start data collection:
+  2. In Rviz, click *Add*, go to the *By topic* tab, add *map*, repeat for anything else you would like to visualize
+  3. Start data collection:
   ```
   ./launch_bag.sh
   ```
+  ***Note: If the Velodyne point cloud is flickering change the speed in the webUI to 2.4x the amount specified in the launch file
