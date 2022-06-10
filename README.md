@@ -9,6 +9,8 @@
  
  Velodyne VLP-16
  
+ Intel Realsense D435
+ 
  Clearpath Robotics Husky
 
 ## Installation
@@ -18,6 +20,7 @@
   cd ~/${YOUR_CATKIN_WS}/src
   git clone https://github.com/adsarver/smartag_datacollection
   git clone https://github.com/typicode/husky
+  git clone https://github.com/IntelRealSense/realsense-ros
   git clone https://github.com/ros-perception/slam_gmapping
   git clone https://github.com/ros-drivers/velodyne
   git clone https://github.com/stereolabs/zed-ros-wrapper
