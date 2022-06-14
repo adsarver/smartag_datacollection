@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="smartagurdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0356837100936477 0.0222049108481528 0.555812785333456"
+        rpy="0 0 0" />
+      <mass
+        value="14.2103783799551" />
+      <inertia
+        ixx="0.261483369289071"
+        ixy="1.14660712103473E-07"
+        ixz="0.00512888335437374"
+        iyy="0.288497708920354"
+        iyz="1.72257532508572E-06"
+        izz="0.359876839369096" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.101960784313725 0.101960784313725 0.101960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="front_left_wheel_link">
+    <inertial>
+      <origin
+        xyz="-0.286975486815589 -0.259891630565297 0.517241791350882"
+        rpy="0 0 0" />
+      <mass
+        value="14.6529746668918" />
+      <inertia
+        ixx="2.22361757810627"
+        ixy="-0.0642636108120311"
+        ixz="0.565870988267871"
+        iyy="2.40058188155518"
+        iyz="0.0497880957458498"
+        izz="0.928157181250363" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/front_left_wheel_link.STL" />
+          <cylinder length="0.1143" radius="0.1651" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/front_left_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_left_wheel"
+    type="continuous">
+    <origin
+      xyz="0.256 0.28547 0.036"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_left_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="1000"
+      velocity="10" />
+  </joint>
+  <link
+    name="front_right_wheel_link">
+    <inertial>
+      <origin
+        xyz="-0.286975486815589 0.311057619434703 0.517241791350882"
+        rpy="0 0 0" />
+      <mass
+        value="14.6529746668918" />
+      <inertia
+        ixx="2.22361757810627"
+        ixy="-0.0642636108120311"
+        ixz="0.565870988267871"
+        iyy="2.40058188155518"
+        iyz="0.0497880957458499"
+        izz="0.928157181250363" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/front_right_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/front_right_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_right_wheel"
+    type="continuous">
+    <origin
+      xyz="0.256 -0.28548 0.036"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_right_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="1000"
+      velocity="10" />
+  </joint>
+  <link
+    name="rear_right_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.225024513184411 0.311057619434703 0.517241791350882"
+        rpy="0 0 0" />
+      <mass
+        value="14.6529746668918" />
+      <inertia
+        ixx="2.22361757810627"
+        ixy="-0.0642636108120311"
+        ixz="0.565870988267871"
+        iyy="2.40058188155518"
+        iyz="0.0497880957458498"
+        izz="0.928157181250363" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/rear_right_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/rear_right_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_right_wheel"
+    type="continuous">
+    <origin
+      xyz="-0.256 -0.28548 0.036"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_right_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="1000"
+      velocity="10" />
+  </joint>
+  <link
+    name="rear_left_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.225024513184411 -0.259891630565297 0.517241791350882"
+        rpy="0 0 0" />
+      <mass
+        value="14.6529746668918" />
+      <inertia
+        ixx="2.22361757810627"
+        ixy="-0.0642636108120311"
+        ixz="0.565870988267871"
+        iyy="2.40058188155518"
+        iyz="0.0497880957458499"
+        izz="0.928157181250363" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/rear_left_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/rear_left_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_left_wheel"
+    type="continuous">
+    <origin
+      xyz="-0.256 0.28547 0.036"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_left_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="1000"
+      velocity="10" />
+  </joint>
+  <link
+    name="zed_link">
+    <inertial>
+      <origin
+        xyz="0.00456159896851871 9.12690621725221E-07 0.01494133462499"
+        rpy="0 0 0" />
+      <mass
+        value="0.167694642835059" />
+      <inertia
+        ixx="0.000382830412066939"
+        ixy="3.28189191039499E-09"
+        ixz="-6.45241842886214E-08"
+        iyy="3.24806894733886E-05"
+        iyz="1.3857903167337E-09"
+        izz="0.000390523047546263" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/zed_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/zed_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="zed_joint"
+    type="fixed">
+    <origin
+      xyz="0.33638 0.002 0.314"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="zed_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lidar_link">
+    <inertial>
+      <origin
+        xyz="5.89805981832114E-16 3.2612801348364E-16 -0.0330286093572053"
+        rpy="0 0 0" />
+      <mass
+        value="0.786253823219787" />
+      <inertia
+        ixx="0.00151021720928138"
+        ixy="1.01041962373767E-20"
+        ixz="5.76279958654395E-19"
+        iyy="0.00147697392396542"
+        iyz="3.00989440945545E-19"
+        izz="0.000720422174010713" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/lidar_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/lidar_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_joint"
+    type="fixed">
+    <origin
+      xyz="-0.2365 0 0.95016"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="realsense_link">
+    <inertial>
+      <origin
+        xyz="0.00152014055144201 -3.9057648565724E-07 0.010451758070197"
+        rpy="0 0 0" />
+      <mass
+        value="0.0482013986778756" />
+      <inertia
+        ixx="2.73914552639321E-05"
+        ixy="-4.25989861960233E-07"
+        ixz="7.54924661317732E-09"
+        iyy="3.35061188385816E-06"
+        iyz="2.11610683923973E-09"
+        izz="2.66521455070172E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/realsense_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/realsense_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="realsense_joint"
+    type="fixed">
+    <origin
+      xyz="-0.23621 -0.29546 1.2957"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="realsense_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="gps_antenna_link">
+    <inertial>
+      <origin
+        xyz="4.97017328424457E-06 0.000210055548435083 -0.00458781110719353"
+        rpy="0 0 0" />
+      <mass
+        value="1.02990079135601" />
+      <inertia
+        ixx="0.00161521332509735"
+        ixy="1.58573213761098E-08"
+        ixz="-7.30355818025241E-09"
+        iyy="0.00157973941386838"
+        iyz="2.70465167932831E-06"
+        izz="0.00284354572566057" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/gps_antenna_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://smartagurdf/meshes/gps_antenna_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gps_antenna_joint"
+    type="fixed">
+    <origin
+      xyz="-0.23658 -0.0006 1.3862"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="gps_antenna_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

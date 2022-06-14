@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="SmartAgURDF3">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0238882656200986 0.0154445877081355 0.554773289159937"
+        rpy="0 0 0" />
+      <mass
+        value="15.4816558685569" />
+      <inertia
+        ixx="0.264836141895999"
+        ixy="-1.42975854181921E-07"
+        ixz="0.00533224131033489"
+        iyy="0.291787044977069"
+        iyz="3.15250338675934E-06"
+        izz="0.36130190123182" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmartAgURDF3/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.92156862745098 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmartAgURDF3/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="fl_link">
+    <inertial>
+      <origin
+        xyz="-0.273972031164338 -0.268075571586984 0.515315810599791"
+        rpy="0 0 0" />
+      <mass
+        value="16.1455458289053" />
+      <inertia
+        ixx="2.38468631507816"
+        ixy="-0.0390199614608443"
+        ixz="0.601945473504338"
+        iyy="2.58581078560861"
+        iyz="0.024029151203794"
+        izz="0.969341226522281" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmartAgURDF3/meshes/fl_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmartAgURDF3/meshes/fl_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fl_joint"
+    type="revolute">
+    <origin
+      xyz="0.256 0.28547 0.036"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fl_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="1000"
+      velocity="0" />
+  </joint>
+  <link
+    name="fr_link">
+    <inertial>
+      <origin
+        xyz="-0.273972031164337 0.302873678413016 0.515315810599791"
+        rpy="0 0 0" />
+      <mass
+        value="16.1455458289053" />
+      <inertia
+        ixx="2.38468631507816"
+        ixy="-0.0390199614608442"
+        ixz="0.601945473504338"
+        iyy="2.58581078560861"
+        iyz="0.024029151203794"
+        izz="0.969341226522281" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmartAgURDF3/meshes/fr_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmartAgURDF3/meshes/fr_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fr_joint"
+    type="revolute">
+    <origin
+      xyz="0.256 -0.28548 0.036"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fr_link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="1000"
+      velocity="0" />
+  </joint>
+  <link
+    name="bl_link">
+    <inertial>
+      <origin
+        xyz="0.238027968835662 -0.268075571586984 0.515315810599791"
+        rpy="0 0 0" />
+      <mass
+        value="16.1455458289053" />
+      <inertia
+        ixx="2.38468631507816"
+        ixy="-0.0390199614608443"
+        ixz="0.601945473504338"
+        iyy="2.58581078560861"
+        iyz="0.024029151203794"
+        izz="0.969341226522281" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmartAgURDF3/meshes/bl_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmartAgURDF3/meshes/bl_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bl_joint"
+    type="revolute">
+    <origin
+      xyz="-0.256 0.28547425 0.0359999999999999"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="bl_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="1000"
+      velocity="0" />
+  </joint>
+  <link
+    name="br_link">
+    <inertial>
+      <origin
+        xyz="0.238027968835662 0.302873678413016 0.515315810599791"
+        rpy="0 0 0" />
+      <mass
+        value="16.1455458289053" />
+      <inertia
+        ixx="2.38468631507816"
+        ixy="-0.0390199614608443"
+        ixz="0.601945473504338"
+        iyy="2.58581078560861"
+        iyz="0.024029151203794"
+        izz="0.969341226522281" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmartAgURDF3/meshes/br_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmartAgURDF3/meshes/br_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="br_joint"
+    type="revolute">
+    <origin
+      xyz="-0.256 -0.28548 0.036"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="br_link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="1000"
+      velocity="0" />
+  </joint>
+  <link
+    name="zed_link">
+    <inertial>
+      <origin
+        xyz="0.00449559140199729 9.15869661617663E-07 0.0149406940528696"
+        rpy="0 0 0" />
+      <mass
+        value="0.167112564416853" />
+      <inertia
+        ixx="0.000382803450012708"
+        ixy="3.2818919103949E-09"
+        ixz="-6.45241842886212E-08"
+        iyy="3.24671599397043E-05"
+        iyz="1.38579031673688E-09"
+        izz="0.000390509518012578" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmartAgURDF3/meshes/zed_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmartAgURDF3/meshes/zed_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="zed_joint"
+    type="fixed">
+    <origin
+      xyz="0.33638 0.002 0.314"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="zed_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lidar_link">
+    <inertial>
+      <origin
+        xyz="1.04083408558608E-17 0 -0.0272645393344298"
+        rpy="0 0 0" />
+      <mass
+        value="0.722935561788397" />
+      <inertia
+        ixx="0.00143825056013111"
+        ixy="1.01265001552392E-20"
+        ixz="5.76382358667348E-19"
+        iyy="0.00143825056013111"
+        iyz="3.00983818548627E-19"
+        izz="0.000610157686125548" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmartAgURDF3/meshes/lidar_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SmartAgURDF3/meshes/lidar_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_joint"
+    type="fixed">
+    <origin
+      xyz="-0.2365 0 0.95016"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
