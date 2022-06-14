@@ -19,7 +19,7 @@
 #include <boost/regex.hpp>
 
 
-#define MAX_SERIAL_READ 2000
+#define MAX_SERIAL_READ 250
 
 namespace base_classes
 {
