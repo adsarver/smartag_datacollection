@@ -19,15 +19,8 @@
   ```
   cd ~/${YOUR_CATKIN_WS}/src
   git clone https://github.com/adsarver/smartag_datacollection
-  git clone https://github.com/husky/husky
-  git clone https://github.com/IntelRealSense/realsense-ros
-  git clone https://github.com/ros-perception/slam_gmapping
-  git clone https://github.com/ros-drivers/velodyne
-  git clone https://github.com/stereolabs/zed-ros-wrapper
-  git clone https://github.com/stereolabs/zed-ros-interfaces
   catkin_make
   ```
-  3. Configure the Zed depth quality and link to the base (zed_link) in these files: zed_camera.launch.xml, common.yaml
 ## How to run
   1. Navigate to the workspace src folder and run the launch_nobag.sh:
   ```
