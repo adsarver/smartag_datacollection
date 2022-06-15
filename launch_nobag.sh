@@ -10,9 +10,9 @@ sleep 2
 gnome-terminal --tab -- roslaunch hardwarelaunch VelodyneEdit.launch
 echo "Velodyne Launched"
 
-gnome-terminal --tab -- rosrun tf static_transform_publisher 0 0 0 0 0 0 lidar_link base_link 0
+gnome-terminal --tab -- rosrun tf static_transform_publisher 0 0 0 0 0 0 base_link lidar_link 0
 
-gnome-terminal --tab -- rosrun laser_scan_matcher laser_scan_matcher_node _fixed_frame:=odom
+gnome-terminal --tab -- rosrun laser_scan_matcher laser_scan_matcher_node _fixed_frame:=base_link
 echo "ZED SDK Container"
 
 gnome-terminal --tab -- roslaunch hardwarelaunch zed2i.launch
