@@ -37,3 +37,4 @@
   ./launch_bag.sh
   ```
   ***Note: If the Velodyne point cloud is flickering change the speed in the webUI to 2.4x the amount specified in the launch file
+  
