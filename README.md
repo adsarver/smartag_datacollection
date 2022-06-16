@@ -21,10 +21,8 @@
   git clone https://github.com/adsarver/smartag_datacollection
   git clone https://github.com/swri-robotics/novatel_gps_driver
   git clone https://github.com/IntelRealSense/realsense-ros
-  git clone https://github.com/ros-perception/slam_gmapping
   git clone https://github.com/ros-drivers/velodyne
   git clone https://github.com/stereolabs/zed-ros-wrapper
-  git clone https://github.com/stereolabs/zed-ros-interfaces
   catkin_make
   ```
 ## How to run
