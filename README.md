@@ -38,7 +38,6 @@
   cd ~/${YOUR_CATKIN_WS}/src
   sh launch.sh
   ```
-  ***Note: If the Velodyne point cloud is flickering change the speed in the webUI to 2.4x the amount specified in the launch file
   
 ## Optional
    1. CMU Exploration: Efficient autonomous navigation and path planning
