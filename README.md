@@ -17,7 +17,7 @@
 
 ## Installation
   1. Make sure that the required hardware is setup properly
-  2. Clone the following workspaces into your src folder and run catkin_make:
+  2. Clone the following workspaces into your src folder and run catkin_make (make sure to install the proper dependencies when required):
   ```
   cd ~/${YOUR_CATKIN_WS}/src
   git clone https://github.com/adsarver/smartag_datacollection
