@@ -17,8 +17,11 @@
  
 ## Dependencies
   Novatel GPS Driver: https://github.com/swri-robotics/novatel_gps_driver
+  
   Realsense Driver: https://github.com/IntelRealSense/realsense-ros
+  
   Velodyne Driver: https://github.com/ros-drivers/velodyne
+  
   Zed SDK/wrapper: https://github.com/stereolabs/zed-ros-wrapper
 
 ## Installation
