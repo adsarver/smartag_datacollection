@@ -7,11 +7,13 @@
 
  ZED 2i
  
- Velodyne VLP-16
+ Velodyne HDL-32E (Required for direct compatability, all Velodyne lidars are compatable with small edits)
  
  Intel Realsense D435
  
  Clearpath Robotics Husky
+ 
+ Novatel GPS receiver and OEM6/7 IMU
 
 ## Installation
   1. Make sure that the required hardware is setup properly
