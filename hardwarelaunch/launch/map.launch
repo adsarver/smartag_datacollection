@@ -1,0 +1,9 @@
+<launch>
+
+    <!-- Differential controller parameters and basic localization -->
+    <include file="$(find fast_lio)/launch/mapping_velodyne.launch" />
+
+    <!-- Differential controller parameters and basic localization -->
+    <include file="$(find livox_ros_driver)/launch/livox_lidar_msg.launch" />
+
+</launch>
