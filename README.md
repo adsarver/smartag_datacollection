@@ -30,6 +30,7 @@
   ```
   cd ~/${YOUR_CATKIN_WS}/src
   git clone https://github.com/adsarver/smartag_datacollection
+  rosdep install --from-paths src --ignore-src -r -y
   catkin_make
   ```
 ## How to run
