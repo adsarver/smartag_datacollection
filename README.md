@@ -26,15 +26,20 @@
   catkin_make
   ```
 ## How to run
-  1. Navigate to the workspace src folder and run the launch_nobag.sh:
+  1. Navigate to the workspace src folder and run the launch.sh:
   ```
   cd ~/${YOUR_CATKIN_WS}/src
-  ./launch_nobag.sh
-  ```
-  2. In Rviz, click *Add*, go to the *By topic* tab, add *map*, repeat for anything else you would like to visualize
-  3. Start data collection:
-  ```
-  ./launch_bag.sh
+  sh launch.sh
   ```
   ***Note: If the Velodyne point cloud is flickering change the speed in the webUI to 2.4x the amount specified in the launch file
+  
+## Optional
+   1. CMU Exploration: Efficient autonomous navigation and path planning
+   ```
+   https://www.cmu-exploration.com/development-environment
+   ```
+   2. FAST_LIO: Fast mapping using lidar and imu data (post and live processing)
+   ```
+   https://github.com/hku-mars/FAST_LIO
+   ```
   
