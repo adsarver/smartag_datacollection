@@ -29,6 +29,7 @@
   2. Clone the following workspaces into your src folder and run catkin_make (make sure to install the proper dependencies when required):
   ```
   cd ~/${YOUR_CATKIN_WS}/src
+  sudo apt install ros-melodic-husky-base
   git clone https://github.com/adsarver/smartag_datacollection
   rosdep install --from-paths src --ignore-src -r -y
   catkin_make
