@@ -2,6 +2,7 @@
   **WIP**
   
   Collect farm and plant data using a Clearpath Robotics Husky base from various farms in and around West Virginia.
+  Tested on Noetic and Melodic
   
 ## Required Hardware
 
@@ -29,7 +30,7 @@
   2. Clone the following workspaces into your src folder and run catkin_make (make sure to install the proper dependencies when required):
   ```
   cd ~/${YOUR_CATKIN_WS}/src
-  sudo apt install ros-melodic-husky-base
+  sudo apt install ros-{distro}-husky-control
   git clone https://github.com/adsarver/smartag_datacollection
   rosdep install --from-paths src --ignore-src -r -y
   catkin_make
