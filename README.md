@@ -25,6 +25,8 @@
   Velodyne Driver: https://github.com/ros-drivers/velodyne
   
   Zed SDK/wrapper: https://github.com/stereolabs/zed-ros-wrapper
+  
+  GPS Browser Visualizer: https://github.com/ziliHarvey/GPS-Browser-Visualizer
 
 ## Installation
   1. Make sure that the required hardware is setup properly
